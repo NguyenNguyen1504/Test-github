@@ -43,9 +43,9 @@ $$
 $$
 \Delta \text{Cash} = CF_{\text{ops}} + CF_{\text{inv}} + CF_{\text{fin}}
 $$
-- CFₒₚₛ = cash from core business ± ΔWorking Capital  
-- CFᵢₙᵥ = usually negative (CapEx)  
-- CF𝒻ᵢₙ = debt/equity issuance, repayments, dividends
+- CFops = cash from core business ± ΔWorking Capital  
+- CFinv = usually negative (CapEx)  
+- CFfin = debt/equity issuance, repayments, dividends
 
 ## 3. Financial Analysis – Key Ratios
 
@@ -71,7 +71,7 @@ $$
 - **Quick Ratio (Acid Test)**  
   $$\frac{Current\ Assets - Inventories}{Current\ Liabilities} \quad \text{(good ≈ 1)}$$
 - **Cash Ratio**  
-  $$\frac{Cash\ \&\ Equivalents}{Current\ Liabilities}$$
+  $$\frac{Cash\ and\ Equivalents}{Current\ Liabilities}$$
 
 ## 4. Operational Analysis (Management Accounting)
 
@@ -105,7 +105,7 @@ $$FCF = EBIT(1-t) + Depreciation - \Delta WC - CapEx$$
 ### 5.3 WACC (Discount Rate)
 $$WACC = \frac{E}{V}r_e + \frac{D}{V}r_d(1-t)$$
 
-## 6. Master Formula Summary (GitHub + Obsidian safe)
+## 6. Master Formula Summary 
 
 | Category         | Measure                    | Formula                                                               |
 |------------------|----------------------------|-----------------------------------------------------------------------|
@@ -121,10 +121,3 @@ $$WACC = \frac{E}{V}r_e + \frac{D}{V}r_d(1-t)$$
 | Investment       | WACC                       | $$\frac{E}{V}r_e + \frac{D}{V}r_d(1-t)$$                              |
 |                  | Free Cash Flow (FCF)       | $$EBIT(1-t) + Depreciation - \Delta WC - CapEx$$                      |
 |                  | NPV                        | $$\sum \frac{FCF_t}{(1+WACC)^t} - Initial\ Investment$$               |
-
-**Đã test kỹ**:  
-- GitHub → 100% đẹp  
-- Obsidian / VS Code / Typora → 100% đẹp  
-- Không còn lỗi KaTeX, không hiện code thô  
-
-Chúc bạn đạt điểm tuyệt đối TU-A1300!
