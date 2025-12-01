@@ -1,5 +1,4 @@
 # Industrial Engineering and Management: Financial Accounting & Investment Analysis
-Consolidated notes for TU-A1300 – clean, complete, and fully compatible with GitHub + Obsidian.
 
 ## 1. Introduction to Financial Administration
 Financial administration is divided into two main areas:
@@ -14,17 +13,17 @@ Financial administration is divided into two main areas:
 ### 2.1 Income Statement (Profit & Loss) – Accrual Basis
 | Line                          | Explanation                                      |
 |-------------------------------|--------------------------------------------------|
-| Revenue (Net Sales)           | Sales excl. VAT                                  |
+|   **Revenue**                 | Sales excl. VAT                                  |
 | – Cost of Goods Sold (COGS)   | Variable costs (materials, direct labor)         |
-| = **Gross Margin**            |                                                  |
+| = **Gross Profit**            |                                                  |
 | – Operating Expenses          | Fixed costs (rent, salaries, marketing, R&D)     |
 | = **EBITDA**                  | Operational cash flow proxy                      |
-| – Depreciation & Amortization | Non-cash expense                                 |
+| – Depreciation                | Non-cash expense                                 |
 | = **EBIT** (Operating Profit) |                                                  |
 | – Interest                    | Financial expenses                               |
-| = EBT                         |                                                  |
-| – Taxes (e.g., 20% Finland)   |                                                  |
-| = **Net Profit**              | Bottom line                                      |
+| = **EBT**                     |                                                  |
+| – Taxes                       |                                                  |
+| = **Net Profit**              |                                                  |
 
 ### 2.2 Balance Sheet – Snapshot at a Point in Time
 $$
@@ -32,20 +31,20 @@ $$
 $$
 
 **Assets**  
-- Non-current (fixed): machinery, buildings, intangibles  
-- Current: Inventories, Accounts Receivable, Cash  
+- Non-current (fixed) = Machinery + Buildings + Intangibles + Investments 
+- Current = Inventories + Accounts Receivable + Cash (and equivalents) 
 
 **Equity & Liabilities**  
 - Equity = Share Capital + Retained Earnings + Current Net Profit  
-- Liabilities: Long-term debt + Short-term debt + Accounts Payable
+- Liabilities = Long-term debt + Short-term debt + Accounts Payable
 
 ### 2.3 Statement of Cash Flows
 $$
-\Delta \text{Cash} = CF_{\text{ops}} + CF_{\text{inv}} + CF_{\text{fin}}
+\Delta \text{Net cash flow} = CF_{\text{ops}} + CF_{\text{inv}} + CF_{\text{fin}}
 $$
-- CFops = cash from core business ± ΔWorking Capital  
-- CFinv = usually negative (CapEx)  
-- CFfin = debt/equity issuance, repayments, dividends
+- CFops = EBITDA + WC(opening - closing) - Interests - Tax
+- CFinv = Fixed_assets(opening - closing) - Depreciation
+- CFfin = Share_capital(opening - closing) - Dividends - Interest_bearing_loans(opening - closing)
 
 ## 3. Financial Analysis – Key Ratios
 
@@ -63,7 +62,7 @@ $$
 - **Debt-to-Equity**  
   $$\frac{Interest\text{-}bearing\ Debt}{Equity}$$
 - **Gearing (Net Debt / Equity)**  
-  $$\frac{Interest\text{-}bearing\ Debt} - {Cash}{Equity}$$
+  $$\frac{Interest\text{-}bearing\ Debt\ -\ Cash}{Equity}$$
 
 ### 3.3 Liquidity
 - **Current Ratio**  
@@ -87,13 +86,13 @@ $$
 
 ### 4.2 Working Capital (WC)
 $$WC = Inventories + Accounts\ Receivable - Accounts\ Payable$$
-- ↑ WC → consumes cash (negative CFₒₚₛ)  
-- ↓ WC → releases cash (positive CFₒₚₛ)
+- ↑ WC → consumes cash (negative CFops)  
+- ↓ WC → releases cash (positive CFops)
 
 ## 5. Investment Analysis
 
 ### 5.1 Free Cash Flow (FCF) – used for NPV/valuation
-$$FCF = EBIT(1-t) + Depreciation - \Delta WC - CapEx$$
+$$FCF = EBIT(1-t) + Depreciation + \Delta WC - Capital Expenditure
 
 ### 5.2 Key Investment Metrics
 | Method               | Rule                                      |
@@ -109,15 +108,15 @@ $$WACC = \frac{E}{V}r_e + \frac{D}{V}r_d(1-t)$$
 
 | Category         | Measure                    | Formula                                                               |
 |------------------|----------------------------|-----------------------------------------------------------------------|
-| Balance Sheet    | Working Capital            | $$Inventories + A/R - A/P$$                                           |
+| Balance Sheet    | Working Capital            | $$Inventories + Account Receivable - Account Payable$$                |
 |                  | Equity Ratio               | $$\frac{Equity}{Total\ Assets} \times 100$$                           |
 |                  | Gearing                    | $$\frac{Interest\text{-}bearing\ Debt - Cash}{Equity}$$               |
 | Liquidity        | Current Ratio              | $$\frac{Current\ Assets}{Current\ Liabilities}$$                      |
-|                  | Quick Ratio                | $$\frac{Current\ Assets - Inventories}{Current\ Liabilities}$$       |
+|                  | Quick Ratio                | $$\frac{Cash\ + Accounts\ receivable}{Current\ Liabilities}$$         |
 | Profitability    | Operating Margin           | $$\frac{EBIT}{Revenue} \times 100$$                                   |
 |                  | ROE                        | $$\frac{Net\ Profit}{Average\ Equity} \times 100$$                    |
-|                  | ROCE                       | $$\frac{EBIT}{Avg\ (Equity + Int\text{-}bearing\ Debt)} \times 100$$  |
+|                  | ROCE                       | $$\frac{EBIT}{Avg\ Assets\ -\ Accounts\ Payable} \times 100$$         |
 | CVP              | Break-even Volume          | $$\frac{Fixed\ Costs}{Price - VC\ per\ unit}$$                        |
 | Investment       | WACC                       | $$\frac{E}{V}r_e + \frac{D}{V}r_d(1-t)$$                              |
-|                  | Free Cash Flow (FCF)       | $$EBIT(1-t) + Depreciation - \Delta WC - CapEx$$                      |
+|                  | Free Cash Flow (FCF)       | $$EBIT(1-t) + Depreciation + \Delta WC - Capital Expenditure$$        |
 |                  | NPV                        | $$\sum \frac{FCF_t}{(1+WACC)^t} - Initial\ Investment$$               |
