@@ -92,7 +92,7 @@ $$WC = Inventories + Accounts\ Receivable - Accounts\ Payable$$
 ## 5. Investment Analysis
 
 ### 5.1 Free Cash Flow (FCF) – used for NPV/valuation
-$$FCF = EBIT(1-t) + Depreciation + \Delta WC - Capital Expenditure
+$$FCF = EBIT(1-t) + Depreciation + \Delta WC - Capital Expenditure$$
 
 ### 5.2 Key Investment Metrics
 | Method               | Rule                                      |
