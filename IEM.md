@@ -118,5 +118,5 @@ $$WACC = \frac{E}{V}r_e + \frac{D}{V}r_d(1-t)$$
 |                  | ROCE                       | $$\frac{EBIT}{Avg\ Assets\ -\ Accounts\ Payable} \times 100$$         |
 | CVP              | Break-even Volume          | $$\frac{Fixed\ Costs}{Price - VC\ per\ unit}$$                        |
 | Investment       | WACC                       | $$\frac{E}{V}r_e + \frac{D}{V}r_d(1-t)$$                              |
-|                  | Free Cash Flow (FCF)       | $$EBIT(1-t) + Depreciation + \Delta WC - Capital Expenditure$$        |
+|                  | Free Cash Flow (FCF)       | $$EBIT(1-t) + Depreciation + WC_{opening} - WC_{closing} - Investment$$|
 |                  | NPV                        | $$\sum \frac{FCF_t}{(1+WACC)^t} - Initial\ Investment$$               |
